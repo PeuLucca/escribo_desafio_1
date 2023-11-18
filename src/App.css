@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #913033;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+button {
+  width: 60%;
+  background-color: white;
+  color: #913033;
+  border: none;
+  padding: 8px 15px;
+  border: 2px solid #913033;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #913033;
+    color: white;
+  }
+}
