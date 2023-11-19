@@ -5,7 +5,7 @@ function App() {
   const [number, setNumber] = useState("");
   const [finalValue, setFinalValue] = useState("");
 
-  const getValue = () => { // função do desafio!!!
+  const getValue = (number) => { // função do desafio!!!
     let sum = 0;
     const parsedNumber = parseInt(number, 10);
 
@@ -38,7 +38,7 @@ function App() {
         value={number}
         onChange={(e) => setNumber(e.target.value)}
       />
-      <button onClick={() => setFinalValue(getValue())}>Enviar</button>
+      <button onClick={() => setFinalValue(getValue(number))}>Enviar</button>
       <br />
       {
         finalValue !== ""
